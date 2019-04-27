@@ -115,3 +115,5 @@ for i in range(len(X_test)):
 prediction["ImageId"] = imageid
 prediction["Label"] = model.predict_classes(X_test, verbose=0)
 print(prediction.head())
+
+file_writer = tf.summary.FileWriter('/Users/saikalyanvytla/Documents/GitHub/CSEE5590-490-Python-and-Deep-Learning-Programming/ICP_D_4', sess.graph)
